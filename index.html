@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script  src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="aframe-physics-components.js" ></script>
     <script src="aframe-physics-components.min.js" ></script>
     <script src="helpers.js" ></script>
@@ -8,7 +8,7 @@
     
   </head>
   <body>
-    <a-scene physics-world="">
+    <a-scene physics-world="gravity:-10">
       <a-assets>
         <a-mixin id="box" geometry="primitive: box" material="color: #166678; side: double"
                           physics-body="mass: 5; boundingBox: 2 2 2"></a-mixin>
